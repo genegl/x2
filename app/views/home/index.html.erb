@@ -1,0 +1,23 @@
+<center>
+<P>&nbsp;<P>&nbsp;<P>&nbsp;<P>
+<h3>Welcome!</h3>
+
+<%= form_for :index do |f| %>
+	<p>
+		<%= f.label :keyword %>
+		&nbsp;&nbsp;&nbsp;
+		<%= f.text_field :keyword %>
+	</p>
+
+	<p>
+		<%= f.label :location %>
+		&nbsp;&nbsp;&nbsp;
+		<%= f.text_field :location %>
+	</p>
+
+	<p>
+		<%= f.submit "   Search   " %>
+	</p>
+<% end %>
+
+</center>
