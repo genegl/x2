@@ -1,13 +1,24 @@
+<style type="text/css">
+<!--
+body { 
+background-image: url(gears.png); 
+background-size: 40%;
+background-repeat: no-repeat; 
+}
+-->
+</style>
+
+
 <center>
 <P>&nbsp;<P>&nbsp;<P>&nbsp;<P>
-<h3>Welcome!</h3>
+<h2>Job2be.com - Find your Destiny</h2>
+<P>&nbsp;<P>
 
-<%= form_for :index do |f| %>
+<%= form_for :index, :method => 'get', :url => 'req' do |f| %>
 	<p>
-		<%= f.label :keyword %>
+		<%= f.label ('Job Title:') %>
 		&nbsp;&nbsp;&nbsp;
-		<%= f.text_field :keyword %>
-	</p>
+		<%= f.text_field :keyword, include_id: false %> </p>
 
 	<p>
 		<%= f.label :location %>
@@ -16,8 +27,16 @@
 	</p>
 
 	<p>
-		<%= f.submit "   Search   " %>
+		<%= f.submit ("   Search   ") %>
 	</p>
 <% end %>
 
 </center>
+<P>&nbsp;<P>&nbsp;
+<P>&nbsp;<P>&nbsp;
+<P>&nbsp;<P>&nbsp;
+<P>&nbsp;<P>&nbsp;
+<P>&nbsp;<P>&nbsp;
+<P>&nbsp;<P>&nbsp;
+<P>&nbsp;<P>&nbsp;
+Images by <a href='https://pixabay.com/en/users/geralt-9301/' target=_blanc>PixaBay.com</a>
